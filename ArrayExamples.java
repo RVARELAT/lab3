@@ -33,10 +33,11 @@ public class ArrayExamples {
       if(num < lowest) { lowest = num; }
     }
     double sum = 0;
+    int c = 0;
     for(double num: arr) {
-      if(num != lowest) { sum += num; }
+      if(num != lowest) { sum += num; c++;}
     }
-    return sum / (arr.length - 1);
+    return sum / (arr.length - c);
   }
 
 
