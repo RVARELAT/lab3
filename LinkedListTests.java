@@ -3,9 +3,12 @@ import org.junit.*;
 
 public class LinkedListTests {
     @Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
+	public void test() {
+        LinkedList testList = new LinkedList();
+        testList.prepend(14);
+        testList.prepend(15);
+        testList.append(17);
+        assertEquals("list should be 15, 14, 17", 15, testList.first());
+
 	}
 }
